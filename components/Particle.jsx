@@ -1,4 +1,4 @@
-var Particle = function (Layer, angle, layerIdx, particleInLayerIdx, v) {
+const Particle = function (Layer, angle, layerIdx, particleInLayerIdx, v) {
   if (typeof Layer.center == 'undefined') {
     Layer.center = {};
     Layer.center.x = v.circleCenterX;
@@ -26,3 +26,5 @@ var Particle = function (Layer, angle, layerIdx, particleInLayerIdx, v) {
 
   this.location = {};
 };
+
+export default Particle;
